@@ -1,19 +1,53 @@
-# Welcome to MkDocs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Introduction to EJS
 
-## Commands
+EJS (Embedded JavaScript) is a simple templating engine that lets you generate HTML dynamically using JavaScript. It is commonly used with Node.js and Express to create dynamic web pages by embedding JavaScript logic inside HTML.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Intended Audience
 
-## Project layout
+This guide is for web developers who have basic knowledge of JavaScript and are looking to use EJS for templating in their projects. It is especially useful when working with Express.js and creating reusable, dynamic web pages efficiently.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Prerequisites
 
-I like to drink :beers: after I play :soccer:
+To follow these instructions, you will need:
+
+- Basic JavaScript knowledge 
+    - Understanding of variables, functions, and loops
+- Node.js installed 
+    - Download and install [Node.js](https://nodejs.org/en)
+- A package manager 
+    - Either `npm` (comes with Node.js) or `yarn`
+- A code editor 
+    - [VS Code](https://code.visualstudio.com/) is recommended
+- Basic knowledge of Express.js 
+    - Familiarity with setting up a simple server in Express will be helpful
+
+## What You Will Learn
+
+This guide covers:
+
+1. Setting up EJS in a Node.js project
+2. Using EJS special syntax to inject dynamic content
+3. Integrating EJS with Express for rendering templates
+4. Using partials to create reusable components
+
+## Typographical Conventions
+
+| Convention                                     | Example                 |
+| ---------------------------------------------- | ----------------------- |
+| Bold: Actions are indicated by bolded verbs | **Insert, Click, Enter**|
+| Inline Code: Inline code is used to indicate filenames, commands, and short snippets | `views/index.ejs` |
+
+## Admonitions
+
+!!! info "Info"
+
+    Provides additional helpful information.
+
+!!! warning "Warning"
+
+    Highlights potential issues to avoid.
+
+!!! tip "Tip"
+
+    Offers best practices or shortcuts to improve efficiency.
