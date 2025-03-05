@@ -8,20 +8,24 @@ EJS (Embedded JavaScript) is a templating engine that allows dynamic content ren
 
 ### 1. **Install** Express and EJS as dependencies:
 
-    Install Express:
+Install Express:
+
     ```sh
     npm install express
     ```
-    This will add Express to your node_modules folder and update your package.json file with Express as a dependency.
 
-    Install EJS:
+This will add Express to your node_modules folder and update your package.json file with Express as a dependency.
+
+Install EJS:
+
     ```sh
     npm install ejs
     ```
-    This will install EJS as a templating engine for your Express app, enabling the dynamic rendering of HTML templates.
+
+This will install EJS as a templating engine for your Express app, enabling the dynamic rendering of HTML templates.
 
 ### 2. Verify the Installations:
-    After installation, you can see that both dependencies have been added to your package.json file. Your dependencies section should look like this:
+After installation, you can see that both dependencies have been added to your package.json file. Your dependencies section should look like this:
 
 
     ```js
@@ -31,7 +35,7 @@ EJS (Embedded JavaScript) is a templating engine that allows dynamic content ren
     }
     ```
 
-    This ensures that both Express and EJS are correctly installed in your project.
+This ensures that both Express and EJS are correctly installed in your project.
 
 ## Configuring Express to Use EJS 
 Before rendering templates, Express must be configured to recognize EJS as the templating engine.
