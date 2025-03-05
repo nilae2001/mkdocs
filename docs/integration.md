@@ -10,17 +10,17 @@ EJS (Embedded JavaScript) is a templating engine that allows dynamic content ren
 
 Install Express:
 
-    ```sh
-    npm install express
-    ```
+```sh
+npm install express
+```
 
 This will add Express to your node_modules folder and update your package.json file with Express as a dependency.
 
 Install EJS:
 
-    ```sh
-    npm install ejs
-    ```
+```sh
+npm install ejs
+```
 
 This will install EJS as a templating engine for your Express app, enabling the dynamic rendering of HTML templates.
 
@@ -28,12 +28,12 @@ This will install EJS as a templating engine for your Express app, enabling the 
 After installation, you can see that both dependencies have been added to your package.json file. Your dependencies section should look like this:
 
 
-    ```js
-    "dependencies": {
-    "express": "^4.17.1",
-    "ejs": "^3.1.6"
-    }
-    ```
+```js
+"dependencies": {
+"express": "^4.17.1",
+"ejs": "^3.1.6"
+}
+```
 
 This ensures that both Express and EJS are correctly installed in your project.
 
@@ -44,33 +44,33 @@ Before rendering templates, Express must be configured to recognize EJS as the t
 Require the Express module in your application file.
 
 
-    ```js
-    const express = require('express');
-    ```
+```js
+const express = require('express');
+```
 
 ### 2. **Initialize the Express App**
 Create an instance of an Express application.
 
 
-    ```js
-    const app = express();
-    ```
+```js
+const app = express();
+```
 
 3. **Set EJS as the View Engine** 
 Configure Express to use EJS for rendering templates.
 
 
-    ```js
-    app.set('view engine', 'ejs');
-    ```
+```js
+app.set('view engine', 'ejs');
+```
 
 4. **Set the Views Directory**
  Define the folder where EJS templates will be stored.
 
 
-    ```js
-    app.set('views', __dirname + '/views');
-    ```
+```js
+app.set('views', __dirname + '/views');
+```
 
 !!! note 
     The default directory for views is ```./views```. If templates are in a different location, update path accordingly.
@@ -82,42 +82,44 @@ Once EJS is configured, Express routes must be set up to render templates dynami
  Define a route that will render an EJS template.
 
 
-    ```js
-    app.get('/', (req, res) => {
-        res.render('index', { name: 'John Doe'});
-    });
-    ```
+```js
+app.get('/', (req, res) => {
+    res.render('index', { name: 'John Doe'});
+});
+```
 
-    When you pass data to the **EJS** template using ```res.render()```, the data is sent as an object. In this case, we are passing one property: ```name```. This property becomes available in the **EJS** template, where we can dynamically insert it into the HTML. Here, the ```name``` property can be used to personalize the message. 
+When you pass data to the **EJS** template using ```res.render()```, the data is sent as an object. In this case, we are passing one property: ```name```. This property becomes available in the **EJS** template, where we can dynamically insert it into the HTML. Here, the ```name``` property can be used to personalize the message. 
     
-    This process allows you to inject dynamic, context-specific information into your views directly from your Express route handlers.
+This process allows you to inject dynamic, context-specific information into your views directly from your Express route handlers.
 
 ### 2. **Create the Template File**
  Inside the ```views``` directory, create ```index.ejs```.
 
 
-    ```html
-    <html>
-       <body>
-           <h1>Welcome back, <%= name %>!</h1>
-       </body>
-     </html>
-    ```
-    This will render the "Welcome back, John Doe!" message if `userLoggedIn` is `true`.
+```html
+<html>
+    <body>
+        <h1>Welcome back, <%= name %>!</h1>
+    </body>
+    </html>
+```
+
+
+This will render the "Welcome back, John Doe!" message if `userLoggedIn` is `true`.
 
 ### 3. **Start the Express Server**
  Run the server to test the template rendering.
 
 
-    ```js
-    app.listen(3000, () => {
-        console.log('Server is running on http://localhost:3000');
-    });
-    ```
+```js
+app.listen(3000, () => {
+    console.log('Server is running on http://localhost:3000');
+});
+```
 
 ### 4. **Verify in Browser**
 
- Open ```http://localhost:3000``` in a browser to check if the template renders correctly.
+Open ```http://localhost:3000``` in a browser to check if the template renders correctly.
 
 
 ![Welcome back, John screenshot](./images/integration.png)
