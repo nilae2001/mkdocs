@@ -116,7 +116,9 @@ You can pass data to partials by providing variables in the ```render``` method.
 
 Now, the header partial will display a dynamic title passed from the index.ejs template.
 
+
 ![Partials with data passing](./images/partials2.png)
+
 
 # Conclusion
 Using **partials** in **EJS** is a powerful way to modularize your templates and avoid repeating the same code across different views. By organizing common components like headers, footers, and navigation menus into partials, you can easily maintain and update your website’s structure. With just a few lines of code, you can include and pass data to these partials, keeping your templates clean and efficient.

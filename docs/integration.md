@@ -73,7 +73,10 @@ Once **EJS** is configured, Express routes must be set up to render templates dy
     ```
 
 4. **Verify in Browser**: Open ```http://localhost:300``` in a browser to check if the template renders correctly.
+
+
 ![Welcome back, John screenshot](./images/integration.png)
+
 
 !!! warning
     If ```res.render()``` fails with an error, verify that EJS is installed (```npm install ejs```) and that the views directory exists.
