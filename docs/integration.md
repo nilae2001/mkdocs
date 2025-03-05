@@ -1,50 +1,44 @@
 # Integrating EJS with Express for Rendering Templates
 
+## Overview
+
+**EJS (Embedded JavaScript)** is a templating engine that allows dynamic content rendering in Express applications. This documentation provides step-by-step instructions on setting up **Express** to use **EJS for** rendering templates. It covers configuring **Express**, setting the view engine, and rendering templates from routes.
+
 ## Installing EJS
 
-Before using EJS in an Express project, install it as a dependency:
+Before using **EJS** in an **Express** project, install it as a dependency:
 
 ```sh
 npm install ejs
+npm init --y
+npm install express ejs
 ```
 
-## Setting Up Express to Use EJS
-To configure Express to use EJS as the templating engine, set the view engine property:
+## Configuring Express to Use EJS 
+Before rendering templates, Express must be configured to recognize EJS as the templating engine.
 
-```js
-const express = require('express');
-const app = express();
+# Steps
 
-// Set EJS as the view engine
-app.set('view engine', 'ejs');
+1. **Import Express**: Require the Express module in your application file.
+    ```js
+    const express = require('express');
+    ```
 
-// Define the directory for EJS templates (default is './views')
-app.set('views', './views');
+2. **Initialize the Express Spp**: Create an instance of an Express application.
+    ```js
+    const app = express();
+    ```
 
-app.get('/', (req, res) => {
-    res.render('index', { title: 'Home Page', message: 'Welcome to EJS with Express!' });
-});
+3. **Set EJS as the View Engine**: Configure Express to use EJS for rendering templates.
+    ```js
+    app.set('view engine', 'ejs');
+    ```
 
-app.listen(3000, () => {
-    console.log('Server is running on http://localhost:3000');
-});
-```
+4. **Set the Views Directory**: Define the folder where EJS templates will be stored.
+    ```js
+    app.set('views', __dirname + '/views');
+    ```
 
-## Creating an EJS Template
-Inside the views folder, create a file called index.ejs:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-</head>
-<body>
-    <h1><%= message %></h1>
-</body>
-</html>
-```
+!!! note The default directory for views is ```sh ./views```. If templates are in a different location, update path accordingly.
 
 
