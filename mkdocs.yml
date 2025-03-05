@@ -56,6 +56,7 @@ nav:
   - EJS Loops and Conditionals: loops_and_conditionals.md
   - Using Paritals with EJS: partials.md
   - Glossary: glossary.md
+  - Troubleshooting: troubleshooting.md
 
 
 # extra:
