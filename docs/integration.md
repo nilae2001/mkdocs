@@ -4,9 +4,9 @@
 
 EJS (Embedded JavaScript) is a templating engine that allows dynamic content rendering in Express applications. This documentation provides step-by-step instructions on setting up Express to use EJS for rendering templates. It covers configuring Express, setting the view engine, and rendering templates from routes.
 
-## Installing EJS
+## Installing Express
 
-Before using EJS in an Express project, **install** it as a dependency:
+Before using EJS in an Express project, **install** Express as a dependency:
 
 ```sh
 npm install express
