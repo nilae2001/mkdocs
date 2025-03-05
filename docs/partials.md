@@ -2,13 +2,13 @@
 
 ## Overview
 
-A key feature of **EJS** is the ability to use partials, which are reusable snippets of HTML that can be included in different views. Partials can help avoid code duplication and promote a cleaner, more maintainable codebase.
+A key feature of EJS is the ability to use partials, which are reusable snippets of HTML that can be included in different views. Partials can help avoid code duplication and promote a cleaner, more maintainable codebase.
 
-This documentation explains how to integrate partials into your **EJS** templates.
+This documentation explains how to integrate partials into your EJS templates.
 
 ## What are Partials?
 
-Partials are small chunks of HTML that can be reused across multiple **EJS** templates. Common examples of partials include headers, footers, navigation bars, and sidebars. Instead of writing the same HTML code in every template, you can create partials and include them in other views, making your templates modular and easier to maintain.
+Partials are small chunks of HTML that can be reused across multiple EJS templates. Common examples of partials include headers, footers, navigation bars, and sidebars. Instead of writing the same HTML code in every template, you can create partials and include them in other views, making your templates modular and easier to maintain.
 
 # Creating Partials in EJS
 
@@ -55,7 +55,7 @@ Create your partial files (e.g., ```header.ejs```, ```footer.ejs```, ```nav.ejs`
 ```
 
 ## 3. Include Partials in Your Main Template
-To use a partial in your main template (e.g., ```index.ejs```), use the ```<%- include %>``` syntax. This tells **EJS** to include the contents of another **EJS** file at that point in the template.
+To use a partial in your main template (e.g., ```index.ejs```), use the ```<%- include %>``` syntax. This tells EJS to include the contents of another EJS file at that point in the template.
 
 ```html
 <html>
@@ -124,4 +124,4 @@ Now, the header partial will display a dynamic title passed from the index.ejs t
 
 
 # Conclusion
-Using **partials** in **EJS** is a powerful way to modularize your templates and avoid repeating the same code across different views. By organizing common components like headers, footers, and navigation menus into partials, you can easily maintain and update your website’s structure. With just a few lines of code, you can include and pass data to these partials, keeping your templates clean and efficient.
+Using partials in EJS is a powerful way to modularize your templates and avoid repeating the same code across different views. By organizing common components like headers, footers, and navigation menus into partials, you can easily maintain and update your website’s structure. With just a few lines of code, you can include and pass data to these partials, keeping your templates clean and efficient.

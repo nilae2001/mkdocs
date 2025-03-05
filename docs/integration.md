@@ -2,11 +2,11 @@
 
 ## Overview
 
-**EJS (Embedded JavaScript)** is a templating engine that allows dynamic content rendering in Express applications. This documentation provides step-by-step instructions on setting up **Express** to use **EJS for** rendering templates. It covers configuring **Express**, setting the view engine, and rendering templates from routes.
+EJS (Embedded JavaScript) is a templating engine that allows dynamic content rendering in Express applications. This documentation provides step-by-step instructions on setting up Express to use EJS for rendering templates. It covers configuring Express, setting the view engine, and rendering templates from routes.
 
 ## Installing EJS
 
-Before using **EJS** in an **Express** project, **install** it as a dependency:
+Before using EJS in an Express project, **install** it as a dependency:
 
 ```sh
 npm install express
@@ -39,7 +39,7 @@ Before rendering templates, Express must be configured to recognize EJS as the t
     The default directory for views is ```./views```. If templates are in a different location, update path accordingly.
 
 ## Rendering an EJS Template from an Express Route
-Once **EJS** is configured, Express routes must be set up to render templates dynamically.
+Once EJS is configured, Express routes must be set up to render templates dynamically.
 
 1. **Create an Express Route**: Define a route that will render an EJS template.
     ```js
