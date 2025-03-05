@@ -6,7 +6,7 @@
 
 ## Installing EJS
 
-Before using **EJS** in an **Express** project, install it as a dependency:
+Before using **EJS** in an **Express** project, **install** it as a dependency:
 
 ```sh
 npm install express

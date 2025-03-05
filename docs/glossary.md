@@ -4,8 +4,6 @@
 | **Express**             | A web application framework for Node.js, used to build server-side applications and APIs.                 |
 | **Templating Engine**   | A software tool that processes templates (HTML with embedded code) and generates dynamic HTML content based on provided data. |
 | **View Engine**         | The component in Express responsible for rendering templates and generating HTML pages to be sent to the client. |
-| **res.render()**        | A method in Express used to render a template and send the generated HTML response to the client.          |
 | **Route**               | A part of an Express application that handles specific HTTP requests (like GET or POST) and sends a response, often by rendering a template. |
 | **Views Directory**     | The folder where template files (like `.ejs`) are stored in an Express project.                           |
-| **app.get()**           | A method in Express used to define a route that responds to GET requests.                                 |
 | **Dynamic Content Rendering** | The process of injecting data into an HTML template to create personalized or context-specific content for the user. |
