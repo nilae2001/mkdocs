@@ -1,13 +1,13 @@
-site_name: My Docs
+site_name: EJS Starter Guide
 site_url: https://sitename.example
 theme:
   name: material
   font:
     text: Merriweather Sans
     code: Red Hat Mono
-  # icon:
-    # logo: fontawesome/solid/m
-  logo: assets/logo.png
+  icon:
+    logo: simple/ejs
+  # logo: assets/logo.png
   favicon: assets/favicon.ico
   features:
     - navigation.footer
@@ -48,6 +48,13 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+
+nav:
+  - Introduction: index.md
+  - Using EJS with Express: integration.md
+  - EJS Tags: ejs_tags.md
+  - EJS Loops and Conditionals: loops_and_conditionals.md
+  - Glossary: glossary.md
 
 
 # extra:

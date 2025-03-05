@@ -1,11 +1,11 @@
 
 # Introduction to EJS
 
-EJS (Embedded JavaScript) is a simple templating engine that lets you generate HTML dynamically using JavaScript. It is commonly used with Node.js and Express to create dynamic web pages by embedding JavaScript logic inside HTML.
+EJS (Embedded JavaScript) is a tool that helps you build HTML pages that adapt based on data or user interactions. It is a way to mix JavaScript directly into your HTML. It is commonly used with Node.js and Express to create dynamic web pages by embedding JavaScript logic inside HTML.
 
 ## Intended Audience
 
-This guide is for web developers who have basic knowledge of JavaScript and are looking to use EJS for templating in their projects. It is especially useful when working with Express.js and creating reusable, dynamic web pages efficiently.
+This guide is for web developers who have basic knowledge of JavaScript. By the end of this guide, you will know how to create a basic Express app using reusable, dynamic web pages and EJS.
 
 ## Prerequisites
 
