@@ -15,7 +15,7 @@ npm install express
 ## Configuring Express to Use EJS 
 Before rendering templates, Express must be configured to recognize EJS as the templating engine.
 
-## Steps
+# Steps
 1. **Import Express**: Require the Express module in your application file.
     ```js
     const express = require('express');
@@ -42,26 +42,28 @@ Before rendering templates, Express must be configured to recognize EJS as the t
 ## Rendering an EJS Template from an Express Route
 Once **EJS** is configured, Express routes must be set up to render templates dynamically.
 
-## Steps
+# Steps
 1. **Create an Express Route**: Define a route that will render an EJS template.
     ```js
     app.get('/', (req, res) => {
-        res.render('index');
+        res.render('index', { name: 'John Doe', userLoggedIn: true });
     });
     ```
+    When you pass data to the **EJS** template using ```res.render()```, the data is sent as an object. In this case, we are passing two properties: ```name``` and ```userLoggedIn```. These properties become available in the **EJS** template, where we can dynamically insert them into the HTML. For example, the ```name``` property can be used to personalize the message, and the ```userLoggedIn``` property controls which content is shown based on the user's login status. This process allows you to inject dynamic, context-specific information into your views directly from your Express route handlers.
 
 2. **Create the Template File**: Inside the ```views``` directory, create ```index.ejs```.
     ```html
-    <!DOCTYPE html>
     <html>
-    <head>
-        <title>Home Page</title>
-    </head>
-    <body>
-        <h1>Welcome to the Home Page</h1>
-    </body>
-    </html>
+       <body>
+         <% if (userLoggedIn) { %>
+           <h1>Welcome back, <%= name %>!</h1>
+         <% } else { %>
+           <h1>Please log in</h1>
+         <% } %>
+       </body>
+     </html>
     ```
+    This will render the "Welcome back, John Doe!" message if `userLoggedIn` is `true`.
 
 3. **Start the Express Server**: Run the server to test the template rendering.
     ```js
