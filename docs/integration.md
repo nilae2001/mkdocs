@@ -6,7 +6,7 @@ EJS (Embedded JavaScript) is a templating engine that allows dynamic content ren
 
 ## Installing EJS and Express
 
-1. Before using EJS in an Express project, **install** Express and EJS as dependencies:
+### 1. Before using EJS in an Express project, **install** Express and EJS as dependencies:
 
     Install Express:
     ```sh
@@ -20,7 +20,7 @@ EJS (Embedded JavaScript) is a templating engine that allows dynamic content ren
     ```
     This will install EJS as a templating engine for your Express app, enabling the dynamic rendering of HTML templates.
 
-2. Verify the Installations
+### 2. Verify the Installations:
     After installation, you can see that both dependencies have been added to your package.json file. Your dependencies section should look like this:
     ```js
     "dependencies": {
