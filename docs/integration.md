@@ -72,7 +72,7 @@ Once **EJS** is configured, Express routes must be set up to render templates dy
     });
     ```
 
-4. **Verify in Browser**: Open ```http://localhost:300``` in a browser to check if the template renders correctly.
+4. **Verify in Browser**: Open ```http://localhost:3000``` in a browser to check if the template renders correctly.
 
 
 ![Welcome back, John screenshot](./images/integration.png)
