@@ -48,12 +48,6 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
-pages:
-  - index.md
-  - integration.md
-  - partials.md
-  - troubleshooting.md
-  - glossary.md
 
 
 # extra:
