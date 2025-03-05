@@ -67,7 +67,6 @@ First, create the ```views``` folder inside your directory
 ```
 directory/
   ├── views/
-  │    └── index.ejs
   ├── node_modules/
   ├── app.js
   ├── package.json
