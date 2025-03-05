@@ -8,7 +8,7 @@ theme:
   icon:
     logo: simple/ejs
   # logo: assets/logo.png
-  favicon: assets/favicon.ico
+  favicon: images/favicon.ico
   features:
     - navigation.footer
   palette:
