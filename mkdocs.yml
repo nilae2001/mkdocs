@@ -54,6 +54,7 @@ nav:
   - Using EJS with Express: integration.md
   - EJS Tags: ejs_tags.md
   - EJS Loops and Conditionals: loops_and_conditionals.md
+  - Using Paritals with EJS: partials.md
   - Glossary: glossary.md
 
 
