@@ -39,6 +39,7 @@ Before rendering templates, Express must be configured to recognize EJS as the t
     app.set('views', __dirname + '/views');
     ```
 
-!!! note The default directory for views is ```sh ./views```. If templates are in a different location, update path accordingly.
+!!! note 
+    The default directory for views is ```./views```. If templates are in a different location, update path accordingly.
 
 
