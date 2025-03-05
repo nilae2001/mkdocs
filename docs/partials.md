@@ -80,7 +80,10 @@ In this example, the ```header```, ```nav```, and ```footer``` partials are incl
 
 ## 4. Verify in Browser
 Open ```http://localhost:3000``` in a browser to verify that the partials are correctly rendered within the main template.
+
+
 ![Page showing partials](./images/partials1.png)
+
 
 # Passing Data to Partials
 You can pass data to partials by providing variables in the ```render``` method. However, note that data passed to the main template is not automatically available to partials. If you need to pass data to a partial, you can do it by including the data as a parameter within the ```include``` statement.
