@@ -24,6 +24,9 @@ npm install ejs
 
 This will install EJS as a templating engine for your Express app, enabling the dynamic rendering of HTML templates.
 
+!!! tip
+    Don't forget to run ```npm init --y``` to initialize a new ```package.json```, and run ```npm install``` to install dependencies in your Node.js project.
+
 ### 2. Verify the Installations:
 After installation, you can see that both dependencies have been added to your package.json file. Your dependencies section should look like this:
 
@@ -41,7 +44,7 @@ This ensures that both Express and EJS are correctly installed in your project.
 Before rendering templates, Express must be configured to recognize EJS as the templating engine.
 
 ### 1. **Import Express**: 
-Require the Express module in your application file.
+Create your application file (e.g., ```app.js```), and require the Express module in it.
 
 
 ```js
@@ -56,20 +59,23 @@ Create an instance of an Express application.
 const app = express();
 ```
 
-3. **Set EJS as the View Engine** 
-Configure Express to use EJS for rendering templates.
+### 3. **Set EJS as the View Engine** 
 
 
-```js
-app.set('view engine', 'ejs');
+First, create the ```views``` folder inside your directory
+
+```
+directory/
+  ├── views/
+  │    └── index.ejs
+  ├── node_modules/
+  ├── app.js
+  ├── package.json
 ```
 
-4. **Set the Views Directory**
- Define the folder where EJS templates will be stored.
-
-
+Configure Express to use EJS for rendering templates.
 ```js
-app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
 ```
 
 !!! note 
@@ -108,13 +114,18 @@ This process allows you to inject dynamic, context-specific information into you
 This will render the "Welcome back, John Doe!" message if `userLoggedIn` is `true`.
 
 ### 3. **Start the Express Server**
- Run the server to test the template rendering.
-
+Run the server to test the template rendering.
 
 ```js
 app.listen(3000, () => {
     console.log('Server is running on http://localhost:3000');
 });
+```
+
+In your console, run the command:
+
+```sh
+node app.js
 ```
 
 ### 4. **Verify in Browser**
