@@ -16,7 +16,7 @@ The Scriptlet Tag is used to execute JavaScript code. These tags are used for co
 
 #### Example: A simple `if` Statement
 
-```ejs
+```html
 <% if(weather.isSunny) { %>
     <p>It's a beautiful day!</p>
 <% } %>
@@ -30,7 +30,7 @@ The Escaped Output Tag is used to output values to the HTML. This tag esapes HTM
 
 #### Example: Displaying a User's Name
 
-```ejs
+```html
 <h1>Welcome, <%= user.name %>!</h1>
 ```
 
@@ -46,7 +46,7 @@ The Unescaped Output Tag is similar to the Escaped Output Tag, except that it do
 
 #### Example: Using Partials to Inject Reusable Components
 
-```ejs
+```html
 <body>
     <%- include('header') %>
 </body>
@@ -64,7 +64,7 @@ The Comment Tag is used to write comments in EJS files. Comments made using the 
 
 #### Example: Adding a Comment
 
-```ejs
+```html
 <%# This is an EJS comment %>
 ```
 
@@ -72,7 +72,7 @@ The Comment Tag is used to write comments in EJS files. Comments made using the 
 
     To make a comment visible in the source code, use:
 
-    ```ejs
+    ```html
     <!-- This comment is visible in the source code -->
     ```
 
@@ -84,14 +84,13 @@ The Literal Tag is used to output a raw EJS tag. These tags escape the EJS, and 
 
 #### Example: Displaying an Example of EJS Escaped Output Tag
 
-```ejs
-<%%= "This will print <%= pet.name %>" %%>
+```html
+<%%= "This will display the surrounding EJS tags" %%>
 ```
 
 #### HTML Output
-```html
-<%= pet.name %>
-```
+
+![literal tag output screenshot](./images/literalTag.png "This image shows an example of using EJS literal tags")
 
 ---
 
