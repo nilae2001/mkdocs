@@ -77,7 +77,7 @@ Configure Express to use EJS for rendering templates.
 app.set('view engine', 'ejs');
 ```
 
-!!! note 
+!!! info 
     The default directory for views is ```./views```. If templates are in a different location, update path accordingly.
 
 ## Rendering an EJS Template from an Express Route

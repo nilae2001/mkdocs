@@ -7,6 +7,6 @@
 | **Route**                              | A part of an Express application that handles specific HTTP requests (like GET or POST) and sends a response, often by rendering a template. |
 | **Views Directory**                    | The folder where template files (like `.ejs`) are stored in an Express project.                           |
 | **Dynamic Content Rendering**          | The process of injecting data into an HTML template to create personalized or context-specific content for the user. |
-| **Cross-Site Scripting (XSS) Attacks** | A vulterability in a website is exploited by an attacker, allowing them to run malicious code. |
+| **Cross-Site Scripting (XSS) Attacks** | A vulnerability in a website is exploited by an attacker, allowing them to run malicious code. |
 | **HTML Escaping**                      | Converting special reserved HTML characters into safe entities. |
 | **Ternary Operator**                   | A JavaScript operator that takes three operands. A condition followed by `?`, an expression to run if the condition is true followed by `:`, and an expression to run if the condition is false. |

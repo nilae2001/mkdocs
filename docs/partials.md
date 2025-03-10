@@ -2,7 +2,7 @@
 
 ## Overview
 
-A key feature of EJS is the ability to use partials, which are reusable snippets of HTML that can be included in different views. Partials can help avoid code duplication and promote a cleaner, more maintainable codebase.
+Partials in EJS let you reuse HTML snippets across multiple views, reducing repetition and keeping the codebase tidy and easier to manage.
 
 This documentation explains how to integrate partials into your EJS templates.
 
@@ -13,7 +13,7 @@ Partials are small chunks of HTML that can be reused across multiple EJS templat
 ## Creating Partials in EJS
 
 ### 1. Create a Partials Folder
-To organize partials, it's a good practice to create a ```partials``` folder within your ```views``` directory.
+To organize partials, it's good practice to create a ```partials``` folder within your ```views``` directory.
 
 ```
 views/
@@ -76,7 +76,8 @@ To use a partial in your main template (e.g., ```index.ejs```), use the ```<%- i
   </body>
 </html>
 ```
-In this example, the ```header```, ```nav```, and ```footer``` partials are included at their respective positions within the ```index.ejs``` file.
+!!! info 
+  In this example, the ```header```, ```nav```, and ```footer``` partials are included at their respective positions within the ```index.ejs``` file.
 
 ### 4. Verify in Browser
 Open ```http://localhost:3000``` in a browser to verify that the partials are correctly rendered within the main template.
@@ -122,4 +123,4 @@ Now, the header partial will display a dynamic title passed from the index.ejs t
 
 
 # Conclusion
-Using partials in EJS is a powerful way to modularize your templates and avoid repeating the same code across different views. By organizing common components like headers, footers, and navigation menus into partials, you can easily maintain and update your website’s structure. With just a few lines of code, you can include and pass data to these partials, keeping your templates clean and efficient.
+EJS partials break your templates into reusable pieces, eliminating redundant code across views. Put common elements like headers and navigation in partials to streamline updates and maintenance. You can include these components with minimal code while passing them any necessary data, keeping your templates clean and focused.

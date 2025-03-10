@@ -1,18 +1,37 @@
 
 # Introduction to EJS
 
-EJS (Embedded JavaScript) is a tool that helps you build HTML pages that adapt based on data or user interactions. It is a way to mix JavaScript directly into your HTML. It is commonly used with Node.js and Express to create dynamic web pages by embedding JavaScript logic inside HTML.
+EJS (Embedded JavaScript) is a powerful templating engine that integrates JavaScript with HTML to create dynamic web content. It allows developers to embed JavaScript code directly within HTML.
+
+EJS is widely adopted in Node.js environments, especially with Express frameworks, thanks to its perfect balance of functionality and straightforward approach.
+
+Key advantages of EJS include:
+
+- Familiar syntax for JavaScript developers
+- Fast rendering performance
+- Simple integration with Express.js, and other Node.js frameworks
+- Support for partials to promote code reusability
+- Ability to generate HTML dynamically based on data from other sources
+
+With EJS, developers can create web pages that respond to real-time data while keeping code organized and easy to maintain.
 
 ## Intended Audience
 
-This guide is for web developers who have basic knowledge of JavaScript. By the end of this guide, you will know how to create a basic Express app using reusable, dynamic web pages and EJS.
+This documentation is for developers who are building web applications using Node.js and Express, and want to use EJS (Embedded JavaScript) for rendering dynamic HTML pages. It is designed for individuals who:
+
+- Can write JavaScript code, including using variables, functions, and loops.
+- Know HTML and how to structure web pages using elements like headings, paragraphs, lists, and links.
+- Have used Node.js, and know how to install and run packages using npm or yarn.
+- Understand Express.js and can set up a simple server with route handling.
 
 ## Prerequisites
 
 To follow these instructions, you will need:
 
-- Basic JavaScript knowledge 
-    - Understanding of variables, functions, and loops
+- Knowledge of JavaScript (ES6) 
+    - Understanding of variables, functions, and basic syntax.
+- Familiarity with HTML 
+    - You should be able to structure web pages using common HTML tags.
 - Node.js installed 
     - Download and install [Node.js](https://nodejs.org/en)
 - A package manager 
