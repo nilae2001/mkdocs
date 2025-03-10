@@ -77,7 +77,8 @@ To use a partial in your main template (e.g., ```index.ejs```), use the ```<%- i
 </html>
 ```
 !!! info 
-  In this example, the ```header```, ```nav```, and ```footer``` partials are included at their respective positions within the ```index.ejs``` file.
+    In this example, the ```header```, ```nav```, and ```footer``` partials are included at their respective positions within the ```index.ejs``` file.
+
 
 ### 4. Verify in Browser
 Open ```http://localhost:3000``` in a browser to verify that the partials are correctly rendered within the main template.
