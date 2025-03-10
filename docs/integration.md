@@ -132,7 +132,7 @@ node app.js
 Open ```http://localhost:3000``` in a browser to check if the template renders correctly.
 
 
-![Welcome back, John screenshot](./images/integration.png)
+![Welcome back, John screenshot](./images/integration.png "This image shows the homepage of localhost:3000, with a message saying 'Welcome back, John Doe!'.")
 
 
 !!! warning

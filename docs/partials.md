@@ -82,7 +82,7 @@ In this example, the ```header```, ```nav```, and ```footer``` partials are incl
 Open ```http://localhost:3000``` in a browser to verify that the partials are correctly rendered within the main template.
 
 
-![Page showing partials](./images/partials1.png)
+![Page showing partials](./images/partials1.png "This image shows the home page of localhost:3000 after using a partial for the header, nav, and footer sections")
 
 
 ## Passing Data to Partials
@@ -118,7 +118,7 @@ You can pass data to partials by providing variables in the ```render``` method.
 Now, the header partial will display a dynamic title passed from the index.ejs template.
 
 
-![Partials with data passing](./images/partials2.png)
+![Partials with data passing](./images/partials2.png "This image shows the home page of localhost:3000 after passing data to a partial for the header, nav, and footer sections")
 
 
 # Conclusion
