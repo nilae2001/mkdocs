@@ -3,7 +3,6 @@
 | Partials not rendering in the template | Incorrect path to partial files | Check that the path in `include()` matches your directory structure (e.g., `<%- include('partials/header') %>`) |
 | "Error: Cannot find module 'ejs'" when starting server | EJS package not installed | Run `npm install ejs` in your project directory |
 | Data not appearing in partials | Data not being passed to the partial | Pass data explicitly to partials: `<%- include('partials/header', { title: 'Home Page' }) %>` |
-| "Failed to lookup view" error | Incorrect view directory configuration | Verify `app.set('views', __dirname + '/views')` in your Express configuration |
 | Syntax errors in EJS templates | Incorrect EJS tag syntax | Ensure proper syntax: `<%= variable %>` for escaped output, `<%- include() %>` for unescaped output/includes |
 | Can't see changes to partials when refreshing browser | Server caching views | Restart the server or implement a development tool like nodemon |
 | Template rendering plain text HTML tags | Using `<%= %>` instead of `<%- %>` for HTML content | Use `<%- htmlContent %>` for unescaped HTML rendering |

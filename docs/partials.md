@@ -10,9 +10,9 @@ This documentation explains how to integrate partials into your EJS templates.
 
 Partials are small chunks of HTML that can be reused across multiple EJS templates. Common examples of partials include headers, footers, navigation bars, and sidebars. Instead of writing the same HTML code in every template, you can create partials and include them in other views, making your templates modular and easier to maintain.
 
-# Creating Partials in EJS
+## Creating Partials in EJS
 
-## 1. Create a Partials Folder
+### 1. Create a Partials Folder
 To organize partials, it's a good practice to create a ```partials``` folder within your ```views``` directory.
 
 ```
@@ -24,7 +24,7 @@ views/
   └── index.ejs
 ```
 
-## 2. Create Partial Files
+### 2. Create Partial Files
 Create your partial files (e.g., ```header.ejs```, ```footer.ejs```, ```nav.ejs```) inside the ```partials``` folder.
 
 **Example: header.ejs**
@@ -54,7 +54,7 @@ Create your partial files (e.g., ```header.ejs```, ```footer.ejs```, ```nav.ejs`
     </nav>
 ```
 
-## 3. Include Partials in Your Main Template
+### 3. Include Partials in Your Main Template
 To use a partial in your main template (e.g., ```index.ejs```), use the ```<%- include %>``` syntax. This tells EJS to include the contents of another EJS file at that point in the template.
 
 ```html
@@ -78,19 +78,17 @@ To use a partial in your main template (e.g., ```index.ejs```), use the ```<%- i
 ```
 In this example, the ```header```, ```nav```, and ```footer``` partials are included at their respective positions within the ```index.ejs``` file.
 
-## 4. Verify in Browser
+### 4. Verify in Browser
 Open ```http://localhost:3000``` in a browser to verify that the partials are correctly rendered within the main template.
 
 
 ![Page showing partials](./images/partials1.png)
 
 
-# Passing Data to Partials
+## Passing Data to Partials
 You can pass data to partials by providing variables in the ```render``` method. However, note that data passed to the main template is not automatically available to partials. If you need to pass data to a partial, you can do it by including the data as a parameter within the ```include``` statement.
 
-## 1. Example: Passing Data to a Partial
-
-**Update header.ejs to accept a dynamic title**
+### 1. Update header.ejs to accept a dynamic title
 
 ```html
     <header>
@@ -98,7 +96,7 @@ You can pass data to partials by providing variables in the ```render``` method.
         <p>Your go-to place for amazing content</p>
     </header>
 ```
-**Update index.ejs to pass data to the partials**
+### 2. Update index.ejs to pass data to the partials
 
 ```html
 <html>
