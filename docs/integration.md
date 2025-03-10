@@ -14,7 +14,7 @@ Install Express:
 npm install express
 ```
 
-This will add Express to your node_modules folder and update your package.json file with Express as a dependency.
+This will add Express to your ```node_modules``` folder and update your ```package.json``` file with Express as a dependency.
 
 Install EJS:
 
@@ -110,7 +110,7 @@ This process allows you to inject dynamic, context-specific information into you
 ```
 
 
-This will render the "Welcome back, John Doe!" message if `userLoggedIn` is `true`.
+This will render the "Welcome back, John Doe!" message.
 
 ### 3. **Start the Express Server**
 Run the server to test the template rendering.
@@ -133,10 +133,6 @@ Open ```http://localhost:3000``` in a browser to check if the template renders c
 
 
 ![Welcome back, John screenshot](./images/integration.png "This image shows the homepage of localhost:3000, with a message saying 'Welcome back, John Doe!'.")
-
-
-!!! warning
-    If ```res.render()``` fails with an error, verify that EJS is installed (```npm install ejs```) and that the views directory exists.
 
 # Conclusion
 With this configuration, Express successfully renders EJS templates from routes, allowing dynamic page content to be served.

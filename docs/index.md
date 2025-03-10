@@ -35,11 +35,11 @@ To follow these instructions, you will need:
 - Node.js installed 
     - Download and install [Node.js](https://nodejs.org/en)
 - A package manager 
-    - Either `npm` (comes with Node.js) or `yarn`
+    - Either `npm` (comes with Node.js) or `yarn`.
 - A code editor 
-    - [VS Code](https://code.visualstudio.com/) is recommended
+    - [VS Code](https://code.visualstudio.com/) is recommended.
 - Basic knowledge of Express.js 
-    - Familiarity with setting up a simple server in Express will be helpful
+    - Familiarity with setting up a simple server in Express will be helpful.
 
 ## What You Will Learn
 

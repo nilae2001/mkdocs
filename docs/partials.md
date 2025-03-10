@@ -8,7 +8,7 @@ This documentation explains how to integrate partials into your EJS templates.
 
 ## What are Partials?
 
-Partials are small chunks of HTML that can be reused across multiple EJS templates. Common examples of partials include headers, footers, navigation bars, and sidebars. Instead of writing the same HTML code in every template, you can create partials and include them in other views, making your templates modular and easier to maintain.
+Partials are small chunks of HTML that can be reused across multiple EJS templates. Common examples of partials include headers, footers, navigation bars, and sidebars. Instead of writing the same HTML code in every template, you can create partials and include them in other views, making your templates easier to maintain.
 
 ## Creating Partials in EJS
 
