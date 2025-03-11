@@ -96,7 +96,7 @@ Optional: If you would like to experiment with using Literal Tags, **insert** li
 
 You have completed the steps to use EJS tags in the context of a Task Manager Dashboard. You can now run JavaScript logic, output both escaped and raw HTML, include internal comments, and display literal code EJS tags. By following this guide and being aware of security concerns, you can use these tags to effectively create dynamic web pages.
 
-Download a sample solution for the task-manager here: <a href="/assets/task-manager.zip" download>task-manager.zip</a>
+Download a sample solution for the task-manager here: [task-manager.zip](/assets/task-manager.zip)
 
 ### Summary of EJS Tags
 
