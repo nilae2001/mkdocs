@@ -29,29 +29,29 @@ Create your partial files (e.g., ```header.ejs```, ```footer.ejs```, ```nav.ejs`
 
 **Example: header.ejs**
 ```html
-    <header>
-        <h1>My Awesome Website</h1>
-        <p>Your go-to place for amazing content</p>
-    </header>
+<header>
+  <h1>My Awesome Website</h1>
+  <p>Your go-to place for amazing content</p>
+</header>
 ```
 
 **Example: footer.ejs**
 ```html
-    <footer>
-        <p>&copy; 2025 My Awesome Website</p>
-    </footer>
+<footer>
+  <p>&copy; 2025 My Awesome Website</p>
+</footer>
 ```
 
 **Example: nav.ejs**
 ```html
-    <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-    </nav>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/services">Services</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
 ```
 
 ### 3. Include Partials in Your Main Template
@@ -59,21 +59,21 @@ To use a partial in your main template (e.g., ```index.ejs```), use the ```<%- i
 
 ```html
 <html>
-  <body>
-    <!-- Include Header Partial -->
-    <%- include('partials/header') %>
+<body>
+  <!-- Include Header Partial -->
+  <%- include('partials/header') %>
 
-    <h2>Welcome to the Home Page!</h2>
-    <p>Here is some dynamic content.</p>
+  <h2>Welcome to the Home Page!</h2>
+  <p>Here is some dynamic content.</p>
 
-    <!-- Include Navigation Partial -->
-    <%- include('partials/nav') %>
+  <!-- Include Navigation Partial -->
+  <%- include('partials/nav') %>
 
-    <p>More content goes here...</p>
+  <p>More content goes here...</p>
 
-    <!-- Include Footer Partial -->
-    <%- include('partials/footer') %>
-  </body>
+  <!-- Include Footer Partial -->
+  <%- include('partials/footer') %>
+</body>
 </html>
 ```
 !!! info 
@@ -93,27 +93,27 @@ You can pass data to partials by providing variables in the ```render``` method.
 ### 1. Update header.ejs to accept a dynamic title
 
 ```html
-    <header>
-        <h1><%= title %></h1>
-        <p>Your go-to place for amazing content</p>
-    </header>
+<header>
+  <h1><%= title %></h1>
+  <p>Your go-to place for amazing content</p>
+</header>
 ```
 ### 2. Update index.ejs to pass data to the partials
 
 ```html
 <html>
-  <body>
-    <!-- Include Header Partial with dynamic title -->
-    <%- include('partials/header', { title: 'Home Page' }) %>
+<body>
+  <!-- Include Header Partial with dynamic title -->
+  <%- include('partials/header', { title: 'Home Page' }) %>
 
-    <h2>Welcome to the Home Page!</h2>
-    <p>Here is some dynamic content.</p>
+  <h2>Welcome to the Home Page!</h2>
+  <p>Here is some dynamic content.</p>
 
-    <%- include('partials/nav') %>
-    <p>More content goes here...</p>
+  <%- include('partials/nav') %>
+  <p>More content goes here...</p>
 
-    <%- include('partials/footer') %>
-  </body>
+  <%- include('partials/footer') %>
+</body>
 </html>
 ```
 

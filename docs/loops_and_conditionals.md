@@ -148,4 +148,6 @@ To loop through key-value pairs of an object, we can use a `for`...`in` loop.
 
 By following these instructions, you have learned how to use conditional statements and loops in your EJS templates. You can now use the techniques described in this section to dynamically display content.
 
-Download a sample solution for the task-manager here: [task-manager.zip](./assets/task-manager.zip){:download="task-manager"}
+Download a sample solution for the task-manager here: [task-manager.zip](./assets/task-manager.zip){:download="task-manager"}. 
+
+After **downloading** and **extracting** the file, navigate to the project folder and **run** `npm install` (or `yarn`) to install dependencies, then `npm start` to **launch** the application.

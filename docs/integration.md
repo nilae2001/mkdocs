@@ -33,8 +33,8 @@ After installation, you can see that both dependencies have been added to your p
 
 ```js
 "dependencies": {
-"express": "^4.17.1",
-"ejs": "^3.1.6"
+    "express": "^4.17.1",
+    "ejs": "^3.1.6"
 }
 ```
 
@@ -66,10 +66,10 @@ First, create the ```views``` folder inside your directory
 
 ```
 directory/
-  ├── views/
-  ├── node_modules/
-  ├── app.js
-  ├── package.json
+    ├── views/
+    ├── node_modules/
+    ├── app.js
+    ├── package.json
 ```
 
 Configure Express to use EJS for rendering templates.
@@ -103,10 +103,10 @@ This process allows you to inject dynamic, context-specific information into you
 
 ```html
 <html>
-    <body>
-        <h1>Welcome back, <%= name %>!</h1>
-    </body>
-    </html>
+<body>
+    <h1>Welcome back, <%= name %>!</h1>
+</body>
+</html>
 ```
 
 
