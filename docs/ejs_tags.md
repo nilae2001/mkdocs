@@ -98,7 +98,7 @@ You have completed the steps to use EJS tags in the context of a Task Manager Da
 
 Download a sample solution for the task-manager here: [task-manager.zip](./assets/task-manager.zip){:download="task-manager"}
 
-After **downloading** and **extracting** the file, navigate to the project folder and **run** `npm install` (or `yarn`) to install dependencies, then `npm start` to **launch** the application.
+After **downloading** and **extracting** the files, navigate to the project folder and **run** `npm install` (or `yarn`) to install dependencies, then `npm start` to **launch** the application.
 
 ### Summary of EJS Tags
 

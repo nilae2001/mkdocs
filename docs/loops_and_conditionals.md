@@ -150,4 +150,4 @@ By following these instructions, you have learned how to use conditional stateme
 
 Download a sample solution for the task-manager here: [task-manager.zip](./assets/task-manager.zip){:download="task-manager"}. 
 
-After **downloading** and **extracting** the file, navigate to the project folder and **run** `npm install` (or `yarn`) to install dependencies, then `npm start` to **launch** the application.
+After **downloading** and **extracting** the files, navigate to the project folder and **run** `npm install` (or `yarn`) to install dependencies, then `npm start` to **launch** the application.
